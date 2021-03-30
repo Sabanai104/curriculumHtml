@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+
+.mainPage {
+    display: block;
+    padding: 0;
+    width: 100vw;
+}
+.sabaNavBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ae62;
+    width: 17%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sabaNavItem {
+    font-family: "Bungee", cursive;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #000;
+    padding: 6px 8px 30px 16px;
+}
+
+.sabaMainContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+    width: 83%;
+    height: 10rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.sabaSecondContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sabaPerfil {
+    display: flex;
+    flex-direction: row;
+}
+
+.sabaImg {
+    display: flex;
+    border-radius: 10rem;
+    width: 16rem;
+    height: 16rem;
+}
+
+.sabaInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+}
+
+.sabaName {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+}
+
+.sabaLastName {
+    margin-left: 0.7rem;
+    color: #f7bd62;
+}
+
+.sabaCursoAge {
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    color: #36494f;
+}
+
+.sabaEmail {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #f7bd62;
+}
+
+.sabaContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+
+.sabaTitle {
+    font-family: "Bungee", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.sabaAboutText {
+    font-size: 1.4rem;
+    color: #36494f;
+    margin-bottom: 2rem;
+}
+.sabaAboutText.second {
+    margin-bottom: 10rem;
+}
+
+.sabaLine {
+    width: 100%;
+    height: 0.1rem;
+    opacity: 30%;
+    background-color: #36494f;
+}
+
+/* ------------- EXPERIENCIA ---------------- */
+
+.sabaExperienceContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sabaExperienceTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sabaExperienceTitle.others {
+    margin-top: 4rem;
+}
+
+.sabaExperienceJob {
+    font-size: 1.7rem;
+}
+
+.sabaExperienceDate {
+    font-size: 0.9rem;
+    color: #f7bd62;
+}
+
+.sabaExperiencePlace {
+    margin-top: 0.6rem;
+    font-size: 1.4rem;
+    color: #36454f;
+}
+
+.sabaExperienceDescription {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #36494f;
+}
+
+.sabaExperienceDescription.last {
+    margin-bottom: 10rem;
+}
+
+
+/* ---------------- Redes Sociais -------------- */
+
+
+.sabaSocialMedia {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    gap: 7rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.sabaSocialCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.4rem;
+    width: 12rem;
+    height: 14rem;
+    border: 1px solid #F7BD62;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sabaSocialCard:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: translate(0, -10px);
+}
+
+.sabaIcon {
+    margin-top: 2.5rem;
+    width:  4.5rem;
+    height: 4.5rem;
+}
+
+.sabaSocialName {
+    margin-top: 2.5rem;
+    font-size: 1.15rem;
+}
+
+/* ------------ Media Query ------------ */
+
+
+@media(max-width: 1248px) {
+    .mainPage {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sabaNavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        padding: auto;
+        overflow: hidden;
+    }
+    
+    .sabaMainContainer {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        width: 100%;
+        height: 10rem;
+    }
+    .sabaImg {
+        display: flex;
+        border-radius: 10rem;
+        width: 12rem;
+        height: 12rem;
+    }
+    .sabaName {
+        font-size: 2.2rem;
+    }
+    
+    .sabaCursoAge {
+        font-size: 1.4rem;
+        color: #36494f;
+    }
+    
+    .sabaEmail {
+        font-size: 1.2rem;
+    }
+
+    .sabaExperienceJob {
+        font-size: 1.5rem;
+    }
+    .sabaExperiencePlace {
+        font-size: 1.2rem;
+    }
+    
+    .sabaSocialMedia {
+        display: grid;
+        grid-template-columns: 28% 28%;
+        gap: 7rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    @media(max-width: 837px) {
+        .sabaMainContainer {
+            padding-top: 5rem;
+            padding-left: 1.5rem;
+            padding-right: 0rem;
+        }
+        .sabaNavItem {
+            font-size: 1.1rem;
+        }
+        .sabaName {
+            font-size: 2rem;
+        }
+
+        .sabaImg {
+            display: none;
+        }
+
+        .sabaInfo {
+            flex-direction: column;
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+        }
+    }
+} 
